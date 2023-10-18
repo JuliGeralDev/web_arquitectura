@@ -1,0 +1,120 @@
+.header{
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 5rem 0;
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;        
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--blanco);
+}
+
+.nombre-sitio{
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.nombre-sitio span{
+    font-weight: 900;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telefono{
+    display: flex;
+}
+.telefono::before{
+    content: '';
+    display: block;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+.header a{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.navegacion a{
+    padding: .5rem;
+    transition: background-color 300ms;        
+    width: 100%;
+    text-align: center;
+
+}
+
+.navegacion a:hover{
+    background-color: rgb(255 255 255 / .5 );
+    color: var(--negro);
+    
+}
+
+.slogan{
+    text-align: center;
+}
+
+.slogan h1{
+    font-size: 3rem ;
+    margin: 0;
+}
+
+.slogan p{
+    margin: 0;
+    line-height: 1;
+}
+@media (min-width: 768px){
+
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nombre-sitio{
+        font-size: 5rem;
+    }
+    
+    .contacto{
+        align-items: flex-end;
+    }
+
+    .navegacion{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .navegacion a{
+        padding: 1rem 2rem;
+    }
+
+    .slogan{
+        text-align: right;
+    }
+
+    .slogan h1{
+        font-size: 5rem;
+    }
+}
